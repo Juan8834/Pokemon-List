@@ -11,3 +11,22 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+/* ========================= */
+/* 🌍 GLOBAL MOBILE ADJUSTMENTS */
+/* ========================= */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  background-color: #030000; /* Match app background */
+  color: rgb(248, 12, 12); /* Match text color */
+}
+
+/* Ensure the React root element centers properly */
+#root {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  min-height: 100vh;
+}

@@ -6,7 +6,7 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #030000; /* Dark background */
-  color: rgb(248, 12, 12); /* White text */
+  color: rgb(248, 12, 12); /* Red text */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -40,15 +40,15 @@ body {
 
 /* Highlight selected Pokémon card */
 .pokemon-container.selected {
-  border: 2px solid #ffcc00; /* Gold border to highlight the selected card */
-  transform: scale(1.05); /* Slight scale effect to show it's selected */
+  border: 2px solid #ffcc00; /* Gold border to highlight */
+  transform: scale(1.05); /* Slight zoom */
 }
 
 /* Pokémon card title */
 .pokemon-container h3 {
   margin: 10px 0;
   font-size: 1.2rem;
-  color: #f90909; /* Yellow text for Pokémon names */
+  color: #f90909; /* Red text for Pokémon names */
 }
 
 /* Pokémon Details inside Card */
@@ -63,16 +63,16 @@ body {
   text-align: left;
 }
 
-/* Remove hover effect since it’s no longer needed */
+/* Remove hover effect (no scaling) */
 .pokemon-container:hover {
-  transform: scale(1); /* No scaling effect when hovered */
+  transform: scale(1);
   z-index: 1;
 }
 
 /* Search Bar Styles */
 .search-bar-container {
   display: flex;
-  justify-content: center; /* Center the search bar */
+  justify-content: center;
   margin-bottom: 20px;
 }
 
@@ -84,7 +84,7 @@ body {
   border: 2px solid #faf8f8;
   outline: none;
   transition: all 0.3s ease;
-  background-color: #1a1a1a; /* Dark background */
+  background-color: #1a1a1a;
   color: white;
 }
 
@@ -94,7 +94,7 @@ body {
 
 .search-bar:focus {
   border-color: #80a281; /* Green border when focused */
-  box-shadow: 0 0 20px rgba(76, 175, 80, 0.5); /* Green glow */
+  box-shadow: 0 0 20px rgba(76, 175, 80, 0.5);
 }
 
 .search-bar::placeholder {
@@ -125,6 +125,7 @@ body {
   display: flex;
   justify-content: center;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .pagination button {
@@ -152,4 +153,105 @@ body {
 .pagination button:disabled {
   background-color: #ccc;
   cursor: not-allowed;
+}
+
+/* ========================= */
+/* 📱 RESPONSIVE DESIGN FIXES */
+/* ========================= */
+
+/* For tablets and smaller laptops */
+@media (max-width: 1024px) {
+  body {
+    flex-direction: column;
+    padding: 20px;
+    min-height: auto;
+  }
+
+  .pokemon-list {
+    gap: 15px;
+    max-width: 900px;
+  }
+
+  .pokemon-container {
+    width: 180px;
+    padding: 8px;
+  }
+
+  .search-bar {
+    width: 250px;
+  }
+}
+
+/* For large phones and small tablets */
+@media (max-width: 768px) {
+  body {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  h1 {
+    font-size: 1.8rem;
+    text-align: center;
+  }
+
+  .pokemon-list {
+    gap: 10px;
+    max-width: 600px;
+  }
+
+  .pokemon-container {
+    width: 150px;
+    padding: 8px;
+  }
+
+  .pokemon-container h3 {
+    font-size: 1rem;
+  }
+
+  .pokemon-card-info {
+    font-size: 0.8rem;
+  }
+
+  .search-bar {
+    width: 200px;
+    font-size: 14px;
+  }
+
+  .pagination {
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+
+  .pagination button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* For small phones */
+@media (max-width: 480px) {
+  .pokemon-list {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pokemon-container {
+    width: 90%;
+    max-width: 300px;
+  }
+
+  .search-bar {
+    width: 90%;
+    font-size: 14px;
+  }
+
+  .pagination {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .pagination button {
+    width: 80%;
+    max-width: 200px;
+  }
 }
