@@ -1,70 +1,92 @@
-# Getting Started with Create React App
+Pokémon List App
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A sleek and interactive React application to explore Pokémon using the PokéAPI. Browse Pokémon with pagination, search for your favorites, and view detailed stats in a card-based layout.
 
-## Available Scripts
+🌟 Features
 
-In the project directory, you can run:
+Fetch Pokémon from PokéAPI
 
-### `npm start`
+Paginated list: Browse Pokémon 10 at a time
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Search functionality: Find Pokémon by name
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Interactive cards: Click a Pokémon card to view details
 
-### `npm test`
+Detailed info: Height, weight, base experience, abilities
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Responsive design: Works on desktop, tablets, and mobile
 
-### `npm run build`
+Dark theme UI: Red and dark tones for a Pokémon-style aesthetic
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+🛠️ Tech Stack
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+React 19 – Frontend library for building UI
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Axios / Fetch API – For fetching Pokémon data
 
-### `npm run eject`
+CSS – Custom styles with responsive breakpoints
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+React Scripts – CRA tooling for development and build
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+📂 Project Structure
+pokemon-list/
+├─ public/
+│  └─ index.html
+├─ src/
+│  ├─ App.jsx          # Main component handling state, pagination, and search
+│  ├─ PokemonList.jsx  # Displays all Pokémon cards
+│  ├─ Pokemon.jsx      # Single Pokémon card with popup details
+│  ├─ PokemonDetails.jsx # Detailed Pokémon info panel
+│  ├─ ErrorBoundary.jsx # Error handling wrapper
+│  ├─ index.js         # App entry point
+│  └─ index.css / App.css # Global and component styling
+├─ package.json
+└─ README.md
+🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Clone the repo
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+git clone https://github.com/Juan8834/pokemon-list.git
+cd pokemon-list
 
-## Learn More
+Install dependencies
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+npm install
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Start the development server
 
-### Code Splitting
+npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Open http://localhost:3000
+ to view it in the browser.
 
-### Analyzing the Bundle Size
+Build for production
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+npm run build
+🎨 Screenshots / UI
 
-### Making a Progressive Web App
+Pokémon List View – Paginated, clickable cards
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Card Details – Popups or inline card info for selected Pokémon
 
-### Advanced Configuration
+Search Bar – Filter Pokémon by name
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Responsive Layout – Works on mobile, tablet, and desktop
 
-### Deployment
+(You can add actual screenshots here for visual appeal)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+⚡ Future Improvements
 
-### `npm run build` fails to minify
+Add sorting by stats (height, weight, experience)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Implement infinite scroll instead of pagination
+
+Add dark/light theme toggle
+
+Include type filters (Water, Fire, Grass, etc.)
+
+Add animations for card selection and popups
+
+📜 License
+
+MIT License – Open source and free to use
