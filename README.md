@@ -1,8 +1,8 @@
-Pokémon List App
+## Pokémon List App
 
 A sleek and interactive React application to explore Pokémon using the PokéAPI. Browse Pokémon with pagination, search for your favorites, and view detailed stats in a card-based layout.
 
-🌟 Features
+## 🌟 Features
 
 Fetch Pokémon from PokéAPI
 
@@ -18,7 +18,7 @@ Responsive design: Works on desktop, tablets, and mobile
 
 Dark theme UI: Red and dark tones for a Pokémon-style aesthetic
 
-🛠️ Tech Stack
+## 🛠️ Tech Stack
 
 React 19 – Frontend library for building UI
 
@@ -28,7 +28,7 @@ CSS – Custom styles with responsive breakpoints
 
 React Scripts – CRA tooling for development and build
 
-📂 Project Structure
+## 📂 Project Structure
 pokemon-list/
 ├─ public/
 │  └─ index.html
@@ -42,6 +42,7 @@ pokemon-list/
 │  └─ index.css / App.css # Global and component styling
 ├─ package.json
 └─ README.md
+```
 🚀 Getting Started
 
 Clone the repo
@@ -60,11 +61,7 @@ npm start
 Open http://localhost:3000
  to view it in the browser.
 
-Build for production
-
-npm run build
-🎨 Screenshots / UI
-
+```
 Pokémon List View – Paginated, clickable cards
 
 Card Details – Popups or inline card info for selected Pokémon
@@ -75,7 +72,7 @@ Responsive Layout – Works on mobile, tablet, and desktop
 
 (You can add actual screenshots here for visual appeal)
 
-⚡ Future Improvements
+##⚡ Future Improvements
 
 Add sorting by stats (height, weight, experience)
 
@@ -87,6 +84,6 @@ Include type filters (Water, Fire, Grass, etc.)
 
 Add animations for card selection and popups
 
-📜 License
+## 📜 License
 
 MIT License – Open source and free to use
